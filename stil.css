@@ -27,10 +27,11 @@
 	.ev{	width: 39%;	text-align:right;	}
 	.ev:hover{	cursor:pointer;		}
 	.dep{	width: 39%;	text-align: left;	}
-	.dep:hover{	cursor:pointer;	}
+	.dep:hover{	cursor:pointer;		}
 	.skor{	width: 8%;	text-align: center;	}
 	.bosl{	text-align:left;	width: 7%;	}
 	.bosr{	text-align:right;	width: 7%;	}
+	.bosr:hover{	cursor:pointer;		}
 }
 
 @media screen and (orientation: landscape) {
@@ -56,6 +57,7 @@
 	.skor{	width: 8%;	text-align: center;	}
 	.bosl{	text-align:left;	width: 7%;	}
 	.bosr{	text-align:right;	width: 7%;	}
+	.bosr:hover{	cursor:pointer;		}
 }
 
 button {
