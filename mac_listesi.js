@@ -7,9 +7,9 @@ var takim_listesi = ["Ankaragücü","Galatasaray","Sivasspor","Alanyaspor","Çay
 function mac_listesi_olustur(){
 	let week;
 	
-	$.get("https://ajansspor.com/Partial/FixturePage?LeagueId=1&Week=0" , function(response){
+	$.get("https://www.sporx.com/_ajax/kategori_fikstur.php?lig=482ofyysbdbeoxauk19yg7tdt" , function(response){
 		
-		let regx = /"selected" value="(.*)">/g;
+		let regx = /<span class="fsweek">(.*?). Hafta<\/span>/g;
 		let haftacik = regx.exec(response)[1];
 		
 		var esas_hafta_deger = document.getElementById("esas"); 
