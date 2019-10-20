@@ -2,7 +2,7 @@ var b_maclar = {};
 var k_maclar = {};
 
 var takimlar = {};
-var takim_listesi = ["Ankaragücü","Galatasaray","Sivasspor","Alanyaspor","Çaykur Rizespor","Kasımpaşa","Fenerbahçe","Bursaspor","Konyaspor","Erzurum BB","Başakşehir","Trabzonspor","Göztepe","Malatyaspor","Beşiktaş","Akhisar Bld.Spor","Kayserispor","Antalyaspor"];
+var takim_listesi = ["Ankaragücü","Galatasaray","Sivasspor","Alanyaspor","Çaykur Rizespor","Kasımpaşa","Fenerbahçe","Gaziantep FK","Konyaspor","Denizlispor","Başakşehir","Trabzonspor","Göztepe","Malatyaspor","Beşiktaş","Gençlerbirliği","Kayserispor","Antalyaspor"];
 
 function mac_listesi_olustur(){
 	let week;
