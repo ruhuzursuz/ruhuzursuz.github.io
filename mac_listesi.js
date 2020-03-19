@@ -55,7 +55,7 @@ function mac_listesi_olustur(){
 					let ev = takimciklar_ev[ii];
 					let dep = takimciklar_dep[ii];
 						
-					if(skorcuklar[ii].includes(":") || skorcuklar[ii].inclueds("ERT") ){
+					if(skorcuklar[ii].includes(":") || skorcuklar[ii].includes("ERT") ){
 						let mac_objem = {"ev":ev, "dep":dep};
 						if(k_maclar[s_week]){k_maclar[s_week].push(mac_objem);}
 						else{k_maclar[s_week] = [mac_objem];}}
