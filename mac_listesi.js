@@ -7,8 +7,8 @@ var takim_listesi = ["Ankaragücü","Galatasaray","Sivasspor","Alanyaspor","Çay
 function mac_listesi_olustur(){
 	let week;
 	
-	$.get("https://www.sporx.com/_ajax/kategori_fikstur.php?lig=482ofyysbdbeoxauk19yg7tdt" , function(response){
-		let regx = /<span class="fsweek">(.*?). Hafta<\/span>/g;
+	$.get("https://m.sporx.com/_ajax/kategori_fikstur.php?lig=482ofyysbdbeoxauk19yg7tdt" , function(response){
+		let regx = /<span>(.*?)[.] Hafta/g;
 	
 	/*$.get("https://m.sporx.com/turkiye-super-lig-fikstur" , function(response){
 		let regx = /<span>(.*?)[.] Hafta<\/span>/g;
