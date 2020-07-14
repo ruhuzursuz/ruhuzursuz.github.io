@@ -13,7 +13,7 @@ function mac_listesi_olustur(){
 	/*$.get("https://m.sporx.com/turkiye-super-lig-fikstur" , function(response){
 		let regx = /<span>(.*?)[.] Hafta<\/span>/g;
 		*/
-		let haftacik = regx.exec(response)[1];
+		let haftacik = regx.exec(response["html"]["week"])[1];
 		
 		var esas_hafta_deger = document.getElementById("esas"); 
 		var sonraki_hafta_deger = document.getElementById("sonra");
