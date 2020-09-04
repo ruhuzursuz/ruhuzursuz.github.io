@@ -2,7 +2,7 @@ var b_maclar = {};
 var k_maclar = {};
 
 var takimlar = {};
-var takim_listesi = ["Ankaragücü","Galatasaray","Sivasspor","Alanyaspor","Çaykur Rizespor","Kasımpaşa","Fenerbahçe","Gaziantep FK","Konyaspor","Denizlispor","Başakşehir","Trabzonspor","Göztepe","Malatyaspor","Beşiktaş","Gençlerbirliği","Kayserispor","Antalyaspor"];
+var takim_listesi = ["Ankaragücü","Galatasaray","Sivasspor","Alanyaspor","Çaykur Rizespor","Kasımpaşa","Fenerbahçe","Gaziantep FK","Konyaspor","Denizlispor","Başakşehir","Trabzonspor","Göztepe","Malatyaspor","Beşiktaş","Gençlerbirliği","Kayserispor","Antalyaspor","Erzurumspor","Karagümrük","Hatayspor"];
 
 function mac_listesi_olustur(){
 	let week;
@@ -19,14 +19,14 @@ function mac_listesi_olustur(){
 		var sonraki_hafta_deger = document.getElementById("sonra");
 		var onceki_hafta_deger = document.getElementById("once"); 
 	
-		if(haftacik == "34"){
+		if(haftacik == "42"){
 			esas_hafta_deger.innerHTML = haftacik;
     		sonraki_hafta_deger.innerHTML = "";
-    		onceki_hafta_deger.innerHTML = "33";}
+    		onceki_hafta_deger.innerHTML = "41";}
 		else if(haftacik == "1"){
     		esas_hafta_deger.innerHTML = haftacik;
     		sonraki_hafta_deger.innerHTML = "";
-    		onceki_hafta_deger.innerHTML = "33";}
+    		onceki_hafta_deger.innerHTML = "41";}
 		else{
     		sonraki_hafta_deger.innerHTML = parseInt(haftacik)+1;
     		onceki_hafta_deger.innerHTML = parseInt(haftacik)-1;
@@ -38,7 +38,7 @@ function mac_listesi_olustur(){
 		let regie_skorlar = /<span>(.{3,5})<\/span>/g;	
 			
 		
-		for(week=1; week<35; week++){
+		for(week=1; week<43; week++){
 			let s_week = week.toString();
 			b_maclar[s_week] = [];
 				
@@ -51,7 +51,7 @@ function mac_listesi_olustur(){
 				while(eslesmeler = regie_takimlar_dep.exec(response["html"]["body"])){takimciklar_dep.push(eslesmeler[1])}
 				while(eslesmeler = regie_skorlar.exec(response["html"]["body"])){skorcuklar.push(eslesmeler[1])}
 					
-				for(let ii=0; ii<9; ii++){
+				for(let ii=0; ii<10; ii++){
 					let ev = takimciklar_ev[ii];
 					let dep = takimciklar_dep[ii];
 						
@@ -65,7 +65,7 @@ function mac_listesi_olustur(){
 						let mac_objem = {"ev":ev, "ev_g":ev_g, "dep":dep, "dep_g":dep_g};
 						b_maclar[s_week].push(mac_objem);}}
 			}).done(()=>{
-				if(week == 35){
+				if(week == 43){
 					takimlar = puan_averaj_hesapla(takim_listesi);fikstur_olustur();tablo_yenile();
 				}
 			})		
