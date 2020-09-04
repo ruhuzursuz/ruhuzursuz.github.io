@@ -1,7 +1,7 @@
 function tablo_yenile(){
 	siralamasyon();
 	var tablo = document.getElementById("tablo");
-	for(var i=1;i<19;i++){
+	for(var i=1;i<=21;i++){
 		for(var j=0; j<10; j++){
 			var hucre = tablo.rows[i].cells[j];
 			if(j == 0){hucre.innerHTML = i;}
@@ -131,11 +131,11 @@ function fikstur_olustur(){
 	var onceki_hafta = document.getElementById("once");
 	esas_hafta_deger = parseInt(esas_hafta.innerHTML);
 	
-	if(esas_hafta_deger == 34 && arguman == 1){console.log("Oops");}
-	else if(esas_hafta_deger == 33 && arguman == 1){
+	if(esas_hafta_deger == 42 && arguman == 1){console.log("Oops");}
+	else if(esas_hafta_deger == 41 && arguman == 1){
 		sonraki_hafta.innerHTML = "";
-		esas_hafta.innerHTML = 34;
-		onceki_hafta.innerHTML = 33;
+		esas_hafta.innerHTML = 42;
+		onceki_hafta.innerHTML = 41;
 		fikstur_olustur();
 	}
 	else if(esas_hafta_deger == 1 && arguman == -1){console.log("Oops");}
