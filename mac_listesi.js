@@ -39,7 +39,7 @@ function mac_listesi_olustur(){
 		let regie_skorlar = /<span>(.{3,5})<\/span>/g;	
 			
 		
-		for(week=1; week<41; week++){
+		for(week=1; week<39; week++){
 			let s_week = week.toString();
 			b_maclar[s_week] = [];
 				
