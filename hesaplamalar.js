@@ -1,6 +1,6 @@
 var pozisyonlar = {};
 function siralamasyon(){
-	var pozisyon = 21;
+	var pozisyon = 20;
 	var puanlar = {};
 	// puanlar şeysini puana göre grupla
 	for(let takim in takimlar){
