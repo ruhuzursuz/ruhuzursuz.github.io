@@ -135,7 +135,7 @@ function fikstur_olustur(){
 	else if(esas_hafta_deger == 37 && arguman == 1){
 		sonraki_hafta.innerHTML = "";
 		esas_hafta.innerHTML = 38;
-		onceki_hafta.innerHTML = 37;
+		onceki_hafta.innerHTML = 36;
 		fikstur_olustur();
 	}
 	else if(esas_hafta_deger == 1 && arguman == -1){console.log("Oops");}
