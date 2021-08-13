@@ -25,8 +25,8 @@ function mac_listesi_olustur(){
     		onceki_hafta_deger.innerHTML = "37";}
 		else if(haftacik == "1"){
     		esas_hafta_deger.innerHTML = haftacik;
-    		sonraki_hafta_deger.innerHTML = "";
-    		onceki_hafta_deger.innerHTML = "37";}
+    		sonraki_hafta_deger.innerHTML = "2";
+    		onceki_hafta_deger.innerHTML = "38";}
 		else{
     		sonraki_hafta_deger.innerHTML = parseInt(haftacik)+1;
     		onceki_hafta_deger.innerHTML = parseInt(haftacik)-1;
