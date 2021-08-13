@@ -14,6 +14,7 @@ function mac_listesi_olustur(){
 		let regx = /<span>(.*?)[.] Hafta<\/span>/g;
 		*/
 		let haftacik = regx.exec(response["html"]["week"])[1];
+		console.log("haftacik: " + haftacik)
 		
 		var esas_hafta_deger = document.getElementById("esas"); 
 		var sonraki_hafta_deger = document.getElementById("sonra");
@@ -21,15 +22,15 @@ function mac_listesi_olustur(){
 	
 		if(haftacik == "38"){
 			esas_hafta_deger.innerHTML = haftacik;
-    		sonraki_hafta_deger.innerHTML = "";
-    		onceki_hafta_deger.innerHTML = "37";}
+    			sonraki_hafta_deger.innerHTML = "";
+    			onceki_hafta_deger.innerHTML = "37";}
 		else if(haftacik == "1"){
-    		esas_hafta_deger.innerHTML = haftacik;
-    		sonraki_hafta_deger.innerHTML = "2";
-    		onceki_hafta_deger.innerHTML = "38";}
+    			esas_hafta_deger.innerHTML = haftacik;
+    			sonraki_hafta_deger.innerHTML = "2";
+    			onceki_hafta_deger.innerHTML = "38";}
 		else{
-    		sonraki_hafta_deger.innerHTML = parseInt(haftacik)+1;
-    		onceki_hafta_deger.innerHTML = parseInt(haftacik)-1;
+    			sonraki_hafta_deger.innerHTML = parseInt(haftacik)+1;
+    			onceki_hafta_deger.innerHTML = parseInt(haftacik)-1;
 			esas_hafta_deger.innerHTML = haftacik;}
 		
 		let ajans_linki = "https://m.sporx.com/_ajax/kategori_fikstur.php?lig=482ofyysbdbeoxauk19yg7tdt&week=";
